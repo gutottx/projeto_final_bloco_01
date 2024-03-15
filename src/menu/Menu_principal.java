@@ -111,14 +111,14 @@ public class Menu_principal {
 						case 1 -> {
 							System.out.println("Digite o codigo do produto");
 							codigo_produto = input.nextInt();
-							produtos.cadastrarProduto(new ProdutoFisico(nome, descricao, preco, tipo, codigo_produto));
+							produtos.atualizarProdutos(new ProdutoFisico(nome, descricao, preco, tipo, codigo_produto));
 						}
 						case 2 -> {
 							System.out.print("Digite o numero da key");
 							numeroKey = input.nextInt();
 							System.out.println("Digite o codigo do produto");
 							codigo_produto = input.nextInt();
-							produtos.cadastrarProduto(new ProdutoKeyDigital(nome, descricao, preco, tipo, codigo_produto, numeroKey));
+							produtos.atualizarProdutos(new ProdutoKeyDigital(nome, descricao, preco, tipo, codigo_produto, numeroKey));
 						}
 						default -> {
 							System.out.println("Tipo de produto inválido!");
